@@ -15,9 +15,9 @@ function defineGrid(e) {
 };
 
 function makeGrid(rows, columns) {
-  for (var i = 0; i <= rows; i++) {
+  for (var i = 0; i <= rows - 1; i++) {
     $(canvas).append("<tr></tr>");
-    for (var j = 0; j <= columns; j++) {
+    for (var j = 0; j <= columns - 1; j++) {
       var row = $("tr")[i];
       $(row).append("<td></td>");
     };
